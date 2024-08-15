@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(126, 237, 245);
+}
+.container{
+    width:400px;
+    background-color: aliceblue;
+    height: 550px;
+    border-radius:5px;
+    border: 1px solid rgb(223, 212, 212)
+}
+.header{
+    border-bottom: 1px solid rgb(230, 223, 223);
+    background-color: whitesmoke;
+    margin:20px 3opx;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.form{
+    padding:20px 30px;
+}
+.section{
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.section label{
+    padding-bottom:5px;
+    display: inline-block;
+}
+.section input:not(.terms){
+    display: block;
+    width:100%;
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+}
+.section span{
+    position: absolute;
+    top:27px;
+    right:20px;
+    visibility: hidden;
+}
+.section small{
+    position: absolute;
+    bottom:0;
+    left:0;
+    visibility: hidden;
+}
+.form .button{
+    width: 100%;
+    padding:7px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    background-color: rgb(18, 245, 245);
+}
+.section.success input{
+    border:1px solid green;
+}
+.section.error input{
+    border: 1px solid red;
+}
+.section.success span.success{
+    color:green;
+    visibility: visible;
+}
+.section.error span.error{
+    color:red;
+    visibility: visible;
+}
+.section.error span.success{
+    visibility: none;
+}
+.section.success span.error{
+    visibility: none;
+}
+.section.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+.section.error.terms{
+    visibility: visible;
+    color: #e74c3c;
+}
